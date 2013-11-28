@@ -36,7 +36,7 @@ Here are the list of steps that would go in testing this code
       - data/review_training_sentiment_scores_RegexpStemmer.csv
       
       
-4) run this script with the default settings.
+4) run main.py script with the default settings.
 
    all it takes few keyword arguments that can be
    tweaked while calling models.train() function.
