@@ -83,8 +83,8 @@ Here are the list of steps that would go in testing this code
 
     The results on the terminal when the script finishes execution
     should be something similar to 
+    
     ------- start time - (Wed Nov 27 15:31:34 2013) -----
-
     Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
     normalize=False, solver=auto, tol=0.001)
     ------------------ Cross Validation using Ridge model --------------------
