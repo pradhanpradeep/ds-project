@@ -77,7 +77,7 @@ Here are the list of steps that would go in testing this code
       values at the end of cross validation loop.
                       
     the regressors used in this exercise have been defined in the model_config
-    dictionary (models.py) with base parameters.the essence of this config dict is it
+    dictionary (config.py) with base parameters.the essence of this config dict is it
     makes easy to tweak the hyper paramerters as required.
 
     The results on the terminal when the script finishes execution
