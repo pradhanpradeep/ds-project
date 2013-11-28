@@ -40,6 +40,14 @@ Here are the list of steps that would go in testing this code
 
    all it takes few keyword arguments that can be
    tweaked while calling models.train() function.
+     
+     -----------------------------------------------------
+     regressors = ['Ridge', 'RandomForestRegressor', 'GradientBoostingRegressor'] #! see config.py 
+     features = ['user', 'business', 'checkin', 'votes']
+
+     models.train(modelnames=regressors, features=features, limit=2000, stemmer_type="RegexpStemmer",
+                 standardized=False, predict=True, plot=True)
+     ------------------------------------------------------
 
     - modelnames is a list with the names configured in
        config.py that we wanna train on
