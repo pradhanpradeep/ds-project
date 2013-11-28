@@ -82,7 +82,7 @@ Here are the list of steps that would go in testing this code
     paramerters as required.
 
     The results on the terminal when the script finishes execution
-    should be something similar to 
+    should be something similar to listing below:
     
     ------- start time - (Wed Nov 27 15:31:34 2013) -----
     Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
