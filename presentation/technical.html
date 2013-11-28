@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Pradeep Pradhan - Data Science - GA</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="pradeep">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + (window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+		
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->		
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Technical Paper</h2>
+					<h3>Final Project - Data Science</h3>
+					<h4>General Assembly - Sydney - 2013</h4>
+				</section>
+				
+				<section>
+					<h3>Topics</h3>
+					<ol>
+						<li>Problem</li>
+						<p><i>(Description, Hypothesis...)</i></p>
+						<br>
+						<li>Data</li>
+						<p><i>(Structure, Overview...)</i></p>
+						<br>						
+						<li>Solution</li>
+						<p><i>(Approach, Implementation...)</i></p>
+						<br>
+						<li>Conclusion</li>
+						<p><i>(Observations, What's next...)</i></p>
+						<br>
+					</ol>
+				</section>
+				
+				<section>
+					<section>
+					<h3>Problem</h3>				
+					<h4>Yelp Recruiting Kaggle Competition</h4>					
+					<h4>How many "useful" votes will a Yelp review receive?</h4>
+					<br>
+					<h3>Hypothesis</h3>
+					<p>Reviews written by frequent and reputed users are most likely to get maximum number of useful votes.</p>
+					<!--
+					<p>
+					The goal of this competition is to estimate the number of useful votes a yelp review will receive without even waiting for the community to vote.
+					The solution of the problem should automatically elevate the high quality review with its freshness intact. 
+					</p>
+					-->
+					<aside class="notes">
+						these are some notes. 
+					</aside>
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h3>Data description</h3>
+						<ul>
+						<p>In the training set: </p>
+						
+							<li>11,537 businesses</li>
+							<li>8,282 checkin sets</li>
+							<li>43,873 users</li>
+							<li>229,907 reviews</li><br>
+
+<p>Each file is composed of a single object type, one JSON object per line. The training data was recorded on 2013-01-19.
+The testing data contains reviews, businesses, users, and checkins from the period between 2013-01-19 and 2013-03-12.</p>
+					</section>
+				    <section>
+						<h3>Data Features</h3>
+						<table id="newspaper">
+							<thead>
+								<tr>									
+									<th>Review</th>
+									<th>User</th>
+									<th>Business</th>
+									<th>Checkin</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>									
+									<td>type</td>
+									<td>type</td>
+									<td>type</td>
+									<td>type</td>									
+								</tr>
+								<tr>
+									<td>review_id</td>
+									<td>user_id</td>
+									<td>business_id</td>
+									<td>business_id</td>									
+								</tr>
+								<tr>
+									<td>votes_useful</td>
+									<td>votes_useful</td>
+									<td>open</td>
+									<td>checkin_info</td>									
+								</tr>
+								<tr>
+									<td>votes_funny</td>
+									<td>votes_funny</td>
+									<td>categories</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td>votes_cool</td>
+									<td>votes_cool</td>
+									<td>full_address</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td>stars</td>
+									<td>average_stars</td>
+									<td>stars</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td>date</td>
+									<td>name</td>
+									<td>name</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td>text</td>
+									<td>review_count</td>
+									<td>review_count</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td>user_id</td>
+									<td></td>
+									<td>city</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td>business_id</td>
+									<td></td>
+									<td>state</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>neighbourhood</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>latitude</td>
+									<td></td>									
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>longitude</td>
+									<td></td>									
+								</tr>									
+							</tbody>
+						</table><br>
+				    </section>
+				    <section>
+					<p>Dataset</p>
+					<img width="640" height="580" src="img/dataset.png" alt="dataset"><br>
+				    </section>				    
+				    <section>
+					<p>Reviews Age</p>
+					<img width="640" height="580" src="img/reviews_per_year.png" alt="map">
+				    </section>
+				    <section>
+					<p>Business Locations</p>
+					<img width="700" height="580" src="img/geo/Rplot_Phoenix_city_zoom_9.png" alt="map">
+				    </section>
+				    <section>
+					<p>Top cities</p>
+					<img width="640" height="580" src="img/top_cities.png" alt="map">
+				    </section>
+				    <section>
+					<p>Reviews Star rating frequency</p>
+					<img width="640" height="580" src="img/review_stars.png" alt="map">
+				    </section>					    
+				</section>
+				<section>
+					<section>						
+						<ul>
+						<h3>Solution</h3><br>
+						<p>Breaking the problem into subtasks</p><br>
+						<li>Preprocessing (Python)</li><br>
+						<li>Data Mining (Python + MongoDB)</li><br>
+						<li>Visualization (R, Python)</li><br>
+						<li>Statistical Methods (Python - Sklearn)</li><br>							
+						</ul>
+					</section>
+					<section>										
+						<h3>Solution Environment</h3>
+						<img width="680" height="580" src="img/architect.png" alt="architecture">
+					</section>
+					<section>
+						
+						<h3>Approach</h3><br>								
+						<strong>generalisation - making predictions from data</strong><br><br>
+						<p>(Supervised - Regression)</p>
+						
+						
+					</section>
+					<section>						
+						<ul>
+						<h3>Steps</h3><br>								
+						<li>Determine input feature set</li><br>
+						<li>Design algorithm</li><br>
+						<li>Cross Validate</li><br>
+						<li>Predict</li><br>
+						<li>Evaluate the accuracy</li><br>
+						<li>Repeat ...</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h3>Input features</h3>
+						<p>Started with simple numerical features picking few at a time from review, business and user datasets. The idea was to
+						quickly get to a working model and continue improving on it. I was able to achieve reasonably decent scores with handful
+						of obvious ones such as review text length, business star rating, business review count, user review count, user average votes,
+						and total number of business checkins. </p>
+					</section>
+					<section>
+						<h3>Regressors tried</h3><br>
+						
+						<ul>
+						<p>from sklearn</p>
+						<li>linear_model.Ridge</li>
+						<li>linear_model.SGDRegressor</li>
+						<li>linear_model.LassoCV</li>
+						<li>linear_model.ElasticNet</li>
+						<li>linear_model.BayesianRidge</li>
+						<li>ensemble.RandomForestRegressor</li>
+						<li>ensemble.ExtraTreesRegressor</li>
+						<li>ensemble.GradientBoostingRegressor</li>
+						</ul>
+					</section>
+				<section>
+					<h3>In short</h3>
+					<pre><code data-trim contenteditable>
+					
+def train(modelnames=[], features=[], predict=True, plot=True ...):
+    #! --------------------------------------------
+    #! train - cross validate - predict - plot
+    #! --------------------------------------------
+	X, y = get_features(limit=limit, features=features....)
+	for name in modelnames:
+	    # create model
+	    # .....
+	    cross_validate(X,y,clf,folds=5,model_name=model_name,plot=plot ...)
+		
+	    if predict:
+	        print '====== predicting ......'
+	        #! grab the complete test set for prediction
+	        Xtest, ytest = get_features(features=features ...)
+	        predict_and_save(X, y, Xtest, clf, features ...)
+	        print '====== predicting done ......'
+		
+		if plot:
+		    plot_error(rmsles,"Fold", "RMSLE", "Cross Validation using XYZ model")
+			
+	</code></pre>
+					
+				</section>
+					<section>										
+						<h3>Evaluation Criteria</h3>
+						<p>Root Mean Squared Logarithmic Error (“RMSLE”) to measure the accuracy of an algorithm</p>
+						<img src="img/RMSLE.jpeg" alt="RMSLE">
+						
+						<ul>
+						<p>Where:</p>
+						<li>epsilon is the RMSLE value (score)</li>
+						<li>n is the total number of reviews in the data set</li>
+						<li>pi is the predicted number of useful votes for review </li>
+						<li>a is the actual number of useful votes for review </li>
+						<li>log(x) is the natural logarithm of (x) </li>
+						</ul>
+					</section>				
+					<section>
+						<h3>Sentiment Scores</h3>
+						<ul>
+						<p>Calculated sentiment scores of each review by simply tokenizing using python-nltk library
+						and extracting emotion score of each word from a precalculated bag of words.</p><br>
+						<li>with different stemmers from Natural Language Toolkit <i>(Python)</i></li>
+						<ul>
+							<li>PorterStemmer</li>
+							<li>LancasterStemmer</li>
+							<li>RegexpStemmer</li>
+							
+						</ul>
+						<br>
+						<li>Precalculated valence scores <i>(Online)</i></li>
+						<table id="tab-minimali">
+							<thead>
+								<tr><th>Word</th><th>Score</th></tr>
+							</thead>
+							<tbody>
+								<tr><td>ability</td><td>2</td></tr>
+								<tr><td>abuse</td><td>-3</td></tr>
+								<tr><td>accept</td><td>1</td></tr>
+								
+							</tbody>
+						</table>
+						</ul>
+					</section>
+					<section>										
+						<h5>Score (user + business)</h5>
+						<img width="700" height="540" src="img/submission_1.png" alt="submission_1">
+					</section>
+					<section>										
+						<h5>Score (user + business + sentiments)</h5>
+						<img width="700" height="580" src="img/submission_2.png" alt="submission_2">
+					</section>
+					<section>										
+						<h5>Score (user + business + sentiments + votes)</h5>
+						<img width="700" height="580" src="img/submission_3.png" alt="submission_2">
+					</section>					
+				</section>
+				<section>
+						<section>
+						<h3>Conclusion</h3><br>
+						<ul>
+						<h5>Challenges...</h5>
+						<li>Wanted to implement a model using Tf-idf (term frequency - inverse document frequency), but couldn't do it because
+						of computational limitations</li>
+						</ul>
+						</section>
+						
+						<section>
+						<ul>
+						<h5>Observations...</h5>
+							<li>Sentiment scores did help but not much</li><br>
+							<li>Of all my regressors, <i>GradientBoostingRegressor</i> gave the best score</li><br>							
+							<li>The solution is applicable to wide range of businesses where predictions are made based on user reviews and ratings</li><br>
+							<li>I can easily reuse my solution (atleast parts of it) for solving similar problems</li>
+						</ul>
+						</section>
+
+
+						<section>						
+						<ul>
+						<h5>What next...</h5>								
+							<li>Try some complex models like stacking, ensembling...</li><br>
+							<li>Build interactive visualizations using R's "shiny" package</li><br>
+							<li>Explore further into Textual data and Sentiment analysis</li><br>							
+						</ul>
+						</section>
+
+				</section>
+
+				<section>
+					<h2>The End</h2>
+					<h3>Pradeep Pradhan</h3>
+					<p>pradeeppradhan@gmail.com</p>
+					<p><a href="https://twitter.com/tweetpradhan">@tweetpradhan</a><p>
+				</section>
+
+			</div> <!-- end of slides -->
+
+			<div class="footer">
+				<p>Pradeep . Data Science . GA . 27 November 2013 </p>
+			</div>
+		</div> <!-- end of reveal -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+		<script>
+		function date_time(id){
+        date = new Date;
+        year = date.getFullYear();
+        month = date.getMonth();
+        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+        d = date.getDate();
+        day = date.getDay();
+        days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+        h = date.getHours();
+        if(h<10){
+				h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10){
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10){
+                s = "0"+s;
+        }
+        result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = result;
+        setTimeout('date_time("'+id+'");','1000');
+        return true;
+		}
+		window.onload = date_time('date_time');
+		</script>
+	</body>
+</html>

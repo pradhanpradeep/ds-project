@@ -1,0 +1,806 @@
+------- start time - (Sun Nov 17 19:00:55 2013) -----
+Ridge(alpha=0.001, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757733, 
+RMSE (fold 3 of 5): 0.726652, 
+RMSE (fold 4 of 5): 0.704728, 
+RMSE (fold 5 of 5): 0.715790, 
+Mean RMSE: 0.724881
+Ridge(alpha=0.01, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757733, 
+RMSE (fold 3 of 5): 0.726652, 
+RMSE (fold 4 of 5): 0.704728, 
+RMSE (fold 5 of 5): 0.715790, 
+Mean RMSE: 0.724881
+Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757733, 
+RMSE (fold 3 of 5): 0.726652, 
+RMSE (fold 4 of 5): 0.704728, 
+RMSE (fold 5 of 5): 0.715790, 
+Mean RMSE: 0.724881
+Ridge(alpha=0.5, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757733, 
+RMSE (fold 3 of 5): 0.726652, 
+RMSE (fold 4 of 5): 0.704728, 
+RMSE (fold 5 of 5): 0.715790, 
+Mean RMSE: 0.724881
+Ridge(alpha=0.75, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757733, 
+RMSE (fold 3 of 5): 0.726652, 
+RMSE (fold 4 of 5): 0.704728, 
+RMSE (fold 5 of 5): 0.715790, 
+Mean RMSE: 0.724881
+Ridge(alpha=0.9, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757733, 
+RMSE (fold 3 of 5): 0.726652, 
+RMSE (fold 4 of 5): 0.704728, 
+RMSE (fold 5 of 5): 0.715790, 
+Mean RMSE: 0.724881
+------- finish time - (Sun Nov 17 19:01:07 2013) -----
+
+==================================================================================================================
+ppradhan@machine:~/Documents/GA/final project/yelp$ python models.py 
+------- start time - (Sun Nov 17 19:14:39 2013) -----
+LassoCV(alphas=None, copy_X=True, cv=3, eps=0.001, fit_intercept=True,
+    max_iter=1000, n_alphas=100, normalize=False, precompute=auto,
+    tol=0.0001, verbose=False)
+ ------------------ Cross Validation using LassoCV model -------------------- 
+RMSE (fold 1 of 5): 0.719504, 
+RMSE (fold 2 of 5): 0.757813, 
+RMSE (fold 3 of 5): 0.726669, 
+RMSE (fold 4 of 5): 0.704678, 
+RMSE (fold 5 of 5): 0.715763, 
+Mean RMSE: 0.724885
+------- finish time - (Sun Nov 17 19:16:10 2013) -----
+ppradhan@machine:~/Documents/GA/final project/yelp$ python models.py 
+------- start time - (Sun Nov 17 19:17:33 2013) -----
+ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+      max_iter=1000, normalize=False, positive=False, precompute=auto,
+      rho=None, tol=0.0001, warm_start=False)
+ ------------------ Cross Validation using ElasticNet model -------------------- 
+RMSE (fold 1 of 5): 0.921145, 
+RMSE (fold 2 of 5): 1.002263, 
+RMSE (fold 3 of 5): 0.918959, 
+RMSE (fold 4 of 5): 0.910903, 
+RMSE (fold 5 of 5): 0.895786, 
+Mean RMSE: 0.929811
+------- finish time - (Sun Nov 17 19:17:36 2013) -----
+ppradhan@machine:~/Documents/GA/final project/yelp$ c
+
+ppradhan@machine:~/Documents/GA/final project/yelp$ python models.py 
+------- start time - (Sun Nov 17 19:18:13 2013) -----
+RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=None, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=10,
+           n_jobs=1, oob_score=False, random_state=None, verbose=0)
+ ------------------ Cross Validation using RandomForestRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.747759, 
+RMSE (fold 2 of 5): 0.778799, 
+RMSE (fold 3 of 5): 0.756920, 
+RMSE (fold 4 of 5): 0.741880, 
+RMSE (fold 5 of 5): 0.740916, 
+Mean RMSE: 0.753255
+------- finish time - (Sun Nov 17 19:24:14 2013) -----
+====================================================================================================
+------- start time - (Sun Nov 17 18:32:30 2013) -----
+GradientBoostingRegressor(alpha=0.001, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=None,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.701831, 
+RMSE (fold 2 of 5): 0.745821, 
+RMSE (fold 3 of 5): 0.708756, 
+RMSE (fold 4 of 5): 0.690026, 
+RMSE (fold 5 of 5): 0.698086, 
+Mean RMSE: 0.708904
+GradientBoostingRegressor(alpha=0.01, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=None,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.701867, 
+RMSE (fold 2 of 5): 0.746576, 
+RMSE (fold 3 of 5): 0.708755, 
+RMSE (fold 4 of 5): 0.690022, 
+RMSE (fold 5 of 5): 0.698086, 
+Mean RMSE: 0.709061
+GradientBoostingRegressor(alpha=0.25, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=None,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.701844, 
+RMSE (fold 2 of 5): 0.745818, 
+RMSE (fold 3 of 5): 0.708852, 
+RMSE (fold 4 of 5): 0.689721, 
+RMSE (fold 5 of 5): 0.698045, 
+Mean RMSE: 0.708856
+GradientBoostingRegressor(alpha=0.5, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=None,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.701895, 
+RMSE (fold 2 of 5): 0.746589, 
+RMSE (fold 3 of 5): 0.708671, 
+RMSE (fold 4 of 5): 0.689761, 
+RMSE (fold 5 of 5): 0.697984, 
+Mean RMSE: 0.708980
+GradientBoostingRegressor(alpha=0.75, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=None,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.701891, 
+RMSE (fold 2 of 5): 0.745820, 
+RMSE (fold 3 of 5): 0.708755, 
+RMSE (fold 4 of 5): 0.690022, 
+RMSE (fold 5 of 5): 0.698045, 
+Mean RMSE: 0.708907
+GradientBoostingRegressor(alpha=0.9, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=None,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+RMSE (fold 1 of 5): 0.701896, 
+RMSE (fold 2 of 5): 0.745813, 
+RMSE (fold 3 of 5): 0.708852, 
+RMSE (fold 4 of 5): 0.689761, 
+RMSE (fold 5 of 5): 0.697979, 
+Mean RMSE: 0.708860
+------- finish time - (Sun Nov 17 20:30:18 2013) -----
+
+
+
+==========================================================================================================
+
+
+all features + sentiment score (PorterStemmer)
+------- start time - (Thu Nov 21 19:46:01 2013) -----
+GradientBoostingRegressor(alpha=0.01, init=None, learning_rate=0.1, loss=ls,
+             max_depth=4, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+(fold 1 of 5) MSE : 0.459675 | RMSE: 0.677993 | RMSLE: 0.569187 
+(fold 2 of 5) MSE : 0.447853 | RMSE: 0.669218 | RMSLE: 0.564915 
+(fold 3 of 5) MSE : 0.451730 | RMSE: 0.672108 | RMSLE: 0.567649 
+(fold 4 of 5) MSE : 0.461243 | RMSE: 0.679149 | RMSLE: 0.571430 
+(fold 5 of 5) MSE : 0.455114 | RMSE: 0.674622 | RMSLE: 0.570881 
+** Mean MSE: 0.455123 | Mean RMSE: 0.674618 | Mean RMSLE: 0.568812
+------- finish time - (Thu Nov 21 20:02:02 2013) -----
+
+all features
+------- start time - (Thu Nov 21 20:16:20 2013) -----
+GradientBoostingRegressor(alpha=0.01, init=None, learning_rate=0.1, loss=ls,
+             max_depth=4, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+(fold 1 of 5) MSE : 0.460390 | RMSE: 0.678520 | RMSLE: 0.569775 
+(fold 2 of 5) MSE : 0.448607 | RMSE: 0.669781 | RMSLE: 0.565370 
+(fold 3 of 5) MSE : 0.451456 | RMSE: 0.671905 | RMSLE: 0.567516 
+(fold 4 of 5) MSE : 0.462774 | RMSE: 0.680275 | RMSLE: 0.571944 
+(fold 5 of 5) MSE : 0.455191 | RMSE: 0.674679 | RMSLE: 0.570833 
+** Mean MSE: 0.455684 | Mean RMSE: 0.675032 | Mean RMSLE: 0.569088
+------- finish time - (Thu Nov 21 20:27:59 2013) -----
+
+
+------- start time - (Thu Nov 21 20:37:02 2013) -----
+Pipeline(Ridge=Ridge(alpha=0.5, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001),
+     Ridge__alpha=0.5, Ridge__copy_X=True, Ridge__fit_intercept=True,
+     Ridge__max_iter=None, Ridge__normalize=False, Ridge__solver=auto,
+     Ridge__tol=0.001,
+     rf=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+           n_jobs=1, oob_score=False, random_state=0, verbose=0),
+     rf__bootstrap=True, rf__compute_importances=None, rf__criterion=mse,
+     rf__max_depth=4, rf__max_features=auto, rf__min_density=None,
+     rf__min_samples_leaf=1, rf__min_samples_split=2, rf__n_estimators=100,
+     rf__n_jobs=1, rf__oob_score=False, rf__random_state=0, rf__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.469557 | RMSE: 0.685243 | RMSLE: 0.588782 
+(fold 2 of 5) MSE : 0.457045 | RMSE: 0.676051 | RMSLE: 0.582994 
+(fold 3 of 5) MSE : 0.461993 | RMSE: 0.679701 | RMSLE: 0.586263 
+(fold 4 of 5) MSE : 0.472150 | RMSE: 0.687131 | RMSLE: 0.589988 
+(fold 5 of 5) MSE : 0.463455 | RMSE: 0.680775 | RMSLE: 0.588360 
+** Mean MSE: 0.464840 | Mean RMSE: 0.681780 | Mean RMSLE: 0.587277
+------- finish time - (Thu Nov 21 20:43:42 2013) -----
+
+
+------- start time - (Thu Nov 21 20:55:45 2013) -----
+Pipeline(ETR=ExtraTreesRegressor(bootstrap=False, compute_importances=None, criterion=mse,
+          max_depth=4, max_features=auto, min_density=None,
+          min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+          n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     ETR__bootstrap=False, ETR__compute_importances=None,
+     ETR__criterion=mse, ETR__max_depth=4, ETR__max_features=auto,
+     ETR__min_density=None, ETR__min_samples_leaf=1,
+     ETR__min_samples_split=2, ETR__n_estimators=100, ETR__n_jobs=1,
+     ETR__oob_score=False, ETR__random_state=42, ETR__verbose=0,
+     Ridge=Ridge(alpha=0.5, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001),
+     Ridge__alpha=0.5, Ridge__copy_X=True, Ridge__fit_intercept=True,
+     Ridge__max_iter=None, Ridge__normalize=False, Ridge__solver=auto,
+     Ridge__tol=0.001,
+     SGD=SGDRegressor(alpha=0.0001, epsilon=0.1, eta0=0.01, fit_intercept=True,
+       l1_ratio=0.15, learning_rate=invscaling, loss=squared_loss,
+       n_iter=5, penalty=l2, power_t=0.25, random_state=None, rho=None,
+       shuffle=False, verbose=0, warm_start=False),
+     SGD__alpha=0.0001, SGD__epsilon=0.1, SGD__eta0=0.01,
+     SGD__fit_intercept=True, SGD__l1_ratio=0.15,
+     SGD__learning_rate=invscaling, SGD__loss=squared_loss, SGD__n_iter=5,
+     SGD__penalty=l2, SGD__power_t=0.25, SGD__random_state=None,
+     SGD__rho=None, SGD__shuffle=False, SGD__verbose=0,
+     SGD__warm_start=False,
+     rf=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+           n_jobs=1, oob_score=False, random_state=0, verbose=0),
+     rf__bootstrap=True, rf__compute_importances=None, rf__criterion=mse,
+     rf__max_depth=4, rf__max_features=auto, rf__min_density=None,
+     rf__min_samples_leaf=1, rf__min_samples_split=2, rf__n_estimators=100,
+     rf__n_jobs=1, rf__oob_score=False, rf__random_state=0, rf__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.469557 | RMSE: 0.685243 | RMSLE: 0.588782 
+(fold 2 of 5) MSE : 0.457045 | RMSE: 0.676051 | RMSLE: 0.582994 
+(fold 3 of 5) MSE : 0.461993 | RMSE: 0.679701 | RMSLE: 0.586263 
+(fold 4 of 5) MSE : 0.472150 | RMSE: 0.687131 | RMSLE: 0.589988 
+(fold 5 of 5) MSE : 0.463455 | RMSE: 0.680775 | RMSLE: 0.588360 
+** Mean MSE: 0.464840 | Mean RMSE: 0.681780 | Mean RMSLE: 0.587277
+------- finish time - (Thu Nov 21 21:02:24 2013) -----
+
+------- start time - (Thu Nov 21 22:20:21 2013) -----
+Pipeline(GBR=GradientBoostingRegressor(alpha=0.01, init=None, learning_rate=0.1, loss=ls,
+             max_depth=4, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0),
+     GBR__alpha=0.01, GBR__init=None, GBR__learning_rate=0.1, GBR__loss=ls,
+     GBR__max_depth=4, GBR__max_features=None, GBR__min_samples_leaf=1,
+     GBR__min_samples_split=2, GBR__n_estimators=100, GBR__random_state=42,
+     GBR__subsample=1.0, GBR__verbose=0,
+     rf=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+           n_jobs=1, oob_score=False, random_state=0, verbose=0),
+     rf__bootstrap=True, rf__compute_importances=None, rf__criterion=mse,
+     rf__max_depth=4, rf__max_features=auto, rf__min_density=None,
+     rf__min_samples_leaf=1, rf__min_samples_split=2, rf__n_estimators=100,
+     rf__n_jobs=1, rf__oob_score=False, rf__random_state=0, rf__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.468402 | RMSE: 0.684399 | RMSLE: 0.585565 
+(fold 2 of 5) MSE : 0.456275 | RMSE: 0.675481 | RMSLE: 0.579641 
+(fold 3 of 5) MSE : 0.460063 | RMSE: 0.678280 | RMSLE: 0.582274 
+(fold 4 of 5) MSE : 0.471506 | RMSE: 0.686663 | RMSLE: 0.587159 
+(fold 5 of 5) MSE : 0.461562 | RMSE: 0.679383 | RMSLE: 0.584342 
+** Mean MSE: 0.463562 | Mean RMSE: 0.680841 | Mean RMSLE: 0.583796
+------- finish time - (Thu Nov 21 22:30:11 2013) -----
+
+------- start time - (Thu Nov 21 22:35:38 2013) -----
+Pipeline(Bayesian=BayesianRidge(alpha_1=1e-06, alpha_2=1e-06, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=300,
+       normalize=False, tol=0.001, verbose=False),
+     Bayesian__alpha_1=1e-06, Bayesian__alpha_2=1e-06,
+     Bayesian__compute_score=False, Bayesian__copy_X=True,
+     Bayesian__fit_intercept=True, Bayesian__lambda_1=1e-06,
+     Bayesian__lambda_2=1e-06, Bayesian__n_iter=300,
+     Bayesian__normalize=False, Bayesian__tol=0.001,
+     Bayesian__verbose=False,
+     SGD=SGDRegressor(alpha=0.0001, epsilon=0.1, eta0=0.01, fit_intercept=True,
+       l1_ratio=0.15, learning_rate=invscaling, loss=squared_loss,
+       n_iter=5, penalty=l2, power_t=0.25, random_state=None, rho=None,
+       shuffle=False, verbose=0, warm_start=False),
+     SGD__alpha=0.0001, SGD__epsilon=0.1, SGD__eta0=0.01,
+     SGD__fit_intercept=True, SGD__l1_ratio=0.15,
+     SGD__learning_rate=invscaling, SGD__loss=squared_loss, SGD__n_iter=5,
+     SGD__penalty=l2, SGD__power_t=0.25, SGD__random_state=None,
+     SGD__rho=None, SGD__shuffle=False, SGD__verbose=0,
+     SGD__warm_start=False)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.602037 | RMSE: 0.775911 | RMSLE: 0.741608 
+(fold 2 of 5) MSE : 0.593823 | RMSE: 0.770599 | RMSLE: 0.739980 
+(fold 3 of 5) MSE : 0.598471 | RMSE: 0.773609 | RMSLE: 0.741902 
+(fold 4 of 5) MSE : 0.606615 | RMSE: 0.778855 | RMSLE: 0.744852 
+(fold 5 of 5) MSE : 0.599445 | RMSE: 0.774239 | RMSLE: 0.744452 
+** Mean MSE: 0.600078 | Mean RMSE: 0.774642 | Mean RMSLE: 0.742559
+------- finish time - (Thu Nov 21 22:35:41 2013) -----
+
+------- start time - (Thu Nov 21 22:24:31 2013) -----
+Pipeline(ETR=ExtraTreesRegressor(bootstrap=False, compute_importances=None, criterion=mse,
+          max_depth=4, max_features=auto, min_density=None,
+          min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+          n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     ETR__bootstrap=False, ETR__compute_importances=None,
+     ETR__criterion=mse, ETR__max_depth=4, ETR__max_features=auto,
+     ETR__min_density=None, ETR__min_samples_leaf=1,
+     ETR__min_samples_split=2, ETR__n_estimators=100, ETR__n_jobs=1,
+     ETR__oob_score=False, ETR__random_state=42, ETR__verbose=0,
+     GBR=GradientBoostingRegressor(alpha=0.01, init=None, learning_rate=0.1, loss=ls,
+             max_depth=4, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0),
+     GBR__alpha=0.01, GBR__init=None, GBR__learning_rate=0.1, GBR__loss=ls,
+     GBR__max_depth=4, GBR__max_features=None, GBR__min_samples_leaf=1,
+     GBR__min_samples_split=2, GBR__n_estimators=100, GBR__random_state=42,
+     GBR__subsample=1.0, GBR__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.465267 | RMSE: 0.682105 | RMSLE: 0.575745 
+(fold 2 of 5) MSE : 0.453768 | RMSE: 0.673623 | RMSLE: 0.570727 
+(fold 3 of 5) MSE : 0.457612 | RMSE: 0.676470 | RMSLE: 0.572803 
+(fold 4 of 5) MSE : 0.469138 | RMSE: 0.684936 | RMSLE: 0.577111 
+(fold 5 of 5) MSE : 0.461562 | RMSE: 0.679383 | RMSLE: 0.584342 
+** Mean MSE: 0.461469 | Mean RMSE: 0.679304 | Mean RMSLE: 0.576146
+------- finish time - (Thu Nov 21 22:30:18 2013) -----
+
+------- start time - (Thu Nov 21 20:49:09 2013) -----
+Pipeline(ETR=ExtraTreesRegressor(bootstrap=False, compute_importances=None, criterion=mse,
+          max_depth=4, max_features=auto, min_density=None,
+          min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+          n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     ETR__bootstrap=False, ETR__compute_importances=None,
+     ETR__criterion=mse, ETR__max_depth=4, ETR__max_features=auto,
+     ETR__min_density=None, ETR__min_samples_leaf=1,
+     ETR__min_samples_split=2, ETR__n_estimators=100, ETR__n_jobs=1,
+     ETR__oob_score=False, ETR__random_state=42, ETR__verbose=0,
+     Ridge=Ridge(alpha=0.5, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001),
+     Ridge__alpha=0.5, Ridge__copy_X=True, Ridge__fit_intercept=True,
+     Ridge__max_iter=None, Ridge__normalize=False, Ridge__solver=auto,
+     Ridge__tol=0.001,
+     rf=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+           n_jobs=1, oob_score=False, random_state=0, verbose=0),
+     rf__bootstrap=True, rf__compute_importances=None, rf__criterion=mse,
+     rf__max_depth=4, rf__max_features=auto, rf__min_density=None,
+     rf__min_samples_leaf=1, rf__min_samples_split=2, rf__n_estimators=100,
+     rf__n_jobs=1, rf__oob_score=False, rf__random_state=0, rf__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.469557 | RMSE: 0.685243 | RMSLE: 0.588782 
+(fold 2 of 5) MSE : 0.457045 | RMSE: 0.676051 | RMSLE: 0.582994 
+(fold 3 of 5) MSE : 0.461993 | RMSE: 0.679701 | RMSLE: 0.586263 
+(fold 4 of 5) MSE : 0.472150 | RMSE: 0.687131 | RMSLE: 0.589988 
+(fold 5 of 5) MSE : 0.463455 | RMSE: 0.680775 | RMSLE: 0.588360 
+** Mean MSE: 0.464840 | Mean RMSE: 0.681780 | Mean RMSLE: 0.587277
+------- finish time - (Thu Nov 21 20:55:53 2013) -----
+
+
+------- start time - (Fri Nov 22 15:32:31 2013) -----
+Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model --------------------
+(fold 1 of 5) MSE : 0.430460 | RMSE: 0.656094 | RMSLE: 0.563810
+(fold 2 of 5) MSE : 0.445225 | RMSE: 0.667252 | RMSLE: 0.587325
+(fold 3 of 5) MSE : 0.461378 | RMSE: 0.679248 | RMSLE: 0.596768
+(fold 4 of 5) MSE : 0.424787 | RMSE: 0.651757 | RMSLE: 0.534971
+(fold 5 of 5) MSE : 0.437308 | RMSE: 0.661292 | RMSLE: 0.594490
+>>> Mean MSE: 0.439831 | Mean RMSE: 0.663129 | Mean RMSLE: 0.575473 <<<
+______________________________________________________________
+SGDRegressor(alpha=0.25, epsilon=0.1, eta0=0.01, fit_intercept=True,
+       l1_ratio=0.15, learning_rate=invscaling, loss=squared_loss,
+       n_iter=5, penalty=l2, power_t=0.25, random_state=None, rho=None,
+       shuffle=False, verbose=0, warm_start=False)
+ ------------------ Cross Validation using SGDRegressor model --------------------
+(fold 1 of 5) MSE : 0.440210 | RMSE: 0.663484 | RMSLE: 0.564470
+(fold 2 of 5) MSE : 0.450615 | RMSE: 0.671279 | RMSLE: 0.581141
+(fold 3 of 5) MSE : 0.475415 | RMSE: 0.689503 | RMSLE: 0.604634
+(fold 4 of 5) MSE : 0.456250 | RMSE: 0.675462 | RMSLE: 0.557793
+(fold 5 of 5) MSE : 0.451424 | RMSE: 0.671881 | RMSLE: 0.567855
+>>> Mean MSE: 0.454783 | Mean RMSE: 0.674322 | Mean RMSLE: 0.575179 <<<
+______________________________________________________________
+LassoCV(alphas=[0.001, 0.1, 0.25, 0.5, 1, 10, 100, 1000], copy_X=True,
+    cv=None, eps=0.001, fit_intercept=True, max_iter=100, n_alphas=100,
+    normalize=False, precompute=auto, tol=0.0001, verbose=False)
+ ------------------ Cross Validation using LassoCV model --------------------
+(fold 1 of 5) MSE : 0.600081 | RMSE: 0.774649 | RMSLE: 0.732275
+(fold 2 of 5) MSE : 0.600224 | RMSE: 0.774741 | RMSLE: 0.736289
+(fold 3 of 5) MSE : 0.634906 | RMSE: 0.796810 | RMSLE: 0.774566
+(fold 4 of 5) MSE : 0.669423 | RMSE: 0.818182 | RMSLE: 0.775387
+(fold 5 of 5) MSE : 0.635360 | RMSE: 0.797095 | RMSLE: 0.768143
+>>> Mean MSE: 0.627999 | Mean RMSE: 0.792295 | Mean RMSLE: 0.757332 <<<
+______________________________________________________________
+ElasticNet(alpha=0.25, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+      max_iter=100, normalize=False, positive=False, precompute=auto,
+      rho=None, tol=0.0001, warm_start=False)
+ ------------------ Cross Validation using ElasticNet model --------------------
+(fold 1 of 5) MSE : 0.450945 | RMSE: 0.671525 | RMSLE: 0.569961
+(fold 2 of 5) MSE : 0.462098 | RMSE: 0.679778 | RMSLE: 0.582942
+(fold 3 of 5) MSE : 0.481058 | RMSE: 0.693584 | RMSLE: 0.608828
+(fold 4 of 5) MSE : 0.486244 | RMSE: 0.697312 | RMSLE: 0.580662
+(fold 5 of 5) MSE : 0.473731 | RMSE: 0.688281 | RMSLE: 0.588806
+>>> Mean MSE: 0.470815 | Mean RMSE: 0.686096 | Mean RMSLE: 0.586240 <<<
+______________________________________________________________
+BayesianRidge(alpha_1=1e-07, alpha_2=1e-07, compute_score=False, copy_X=True,
+       fit_intercept=True, lambda_1=1e-06, lambda_2=1e-06, n_iter=300,
+       normalize=False, tol=0.001, verbose=False)
+ ------------------ Cross Validation using BayesianRidge model --------------------
+(fold 1 of 5) MSE : 0.430362 | RMSE: 0.656020 | RMSLE: 0.563274
+(fold 2 of 5) MSE : 0.445213 | RMSE: 0.667243 | RMSLE: 0.586781
+(fold 3 of 5) MSE : 0.461673 | RMSE: 0.679465 | RMSLE: 0.596699
+(fold 4 of 5) MSE : 0.425428 | RMSE: 0.652248 | RMSLE: 0.535254
+(fold 5 of 5) MSE : 0.437608 | RMSE: 0.661520 | RMSLE: 0.587793
+>>> Mean MSE: 0.440057 | Mean RMSE: 0.663299 | Mean RMSLE: 0.573960 <<<
+______________________________________________________________
+RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=3, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using RandomForestRegressor model --------------------
+(fold 1 of 5) MSE : 0.428577 | RMSE: 0.654658 | RMSLE: 0.545709
+(fold 2 of 5) MSE : 0.468113 | RMSE: 0.684188 | RMSLE: 0.585942
+(fold 3 of 5) MSE : 0.473616 | RMSE: 0.688197 | RMSLE: 0.592758
+(fold 4 of 5) MSE : 0.453283 | RMSE: 0.673263 | RMSLE: 0.551115
+(fold 5 of 5) MSE : 0.473706 | RMSE: 0.688263 | RMSLE: 0.586119
+>>> Mean MSE: 0.459459 | Mean RMSE: 0.677714 | Mean RMSLE: 0.572329 <<<
+______________________________________________________________
+[  2.60916335e-02   0.00000000e+00   4.81149151e-03   3.78141616e-04
+   7.06057507e-04   9.67823682e-01   1.88993481e-04]
+ExtraTreesRegressor(bootstrap=False, compute_importances=None, criterion=mse,
+          max_depth=3, max_features=auto, min_density=None,
+          min_samples_leaf=1, min_samples_split=2, n_estimators=100,
+          n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using ExtraTreesRegressor model --------------------
+(fold 1 of 5) MSE : 0.441072 | RMSE: 0.664132 | RMSLE: 0.566888
+(fold 2 of 5) MSE : 0.459817 | RMSE: 0.678098 | RMSLE: 0.581406
+(fold 3 of 5) MSE : 0.476399 | RMSE: 0.690217 | RMSLE: 0.606607
+(fold 4 of 5) MSE : 0.481871 | RMSE: 0.694169 | RMSLE: 0.576867
+(fold 5 of 5) MSE : 0.473054 | RMSE: 0.687789 | RMSLE: 0.590353
+>>> Mean MSE: 0.466442 | Mean RMSE: 0.682881 | Mean RMSLE: 0.584424 <<<
+______________________________________________________________
+[  1.11929242e-01   0.00000000e+00   5.14605551e-04   6.88512729e-04
+   6.89631346e-05   8.86480819e-01   3.17857394e-04]
+GradientBoostingRegressor(alpha=0.25, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model --------------------
+(fold 1 of 5) MSE : 0.434250 | RMSE: 0.658976 | RMSLE: 0.544703
+(fold 2 of 5) MSE : 0.499421 | RMSE: 0.706697 | RMSLE: 0.613186
+(fold 3 of 5) MSE : 0.492423 | RMSE: 0.701728 | RMSLE: 0.600265
+(fold 4 of 5) MSE : 0.475846 | RMSE: 0.689816 | RMSLE: 0.570631
+(fold 5 of 5) MSE : 0.452309 | RMSE: 0.672539 | RMSLE: 0.566304
+>>> Mean MSE: 0.470849 | Mean RMSE: 0.685951 | Mean RMSLE: 0.579018 <<<
+______________________________________________________________
+[ 0.27215679  0.          0.07567741  0.04021636  0.16477375  0.30809707
+  0.13907862]
+------- finish time - (Fri Nov 22 15:32:35 2013) -----
+
+===================================================================================================================
+all features 
+
+Pipeline(ExtraTreesRegressor=ExtraTreesRegressor(bootstrap=False, compute_importances=None, criterion=mse,
+          max_depth=4, max_features=auto, min_density=None,
+          min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+          n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     ExtraTreesRegressor__bootstrap=False,
+     ExtraTreesRegressor__compute_importances=None,
+     ExtraTreesRegressor__criterion=mse, ExtraTreesRegressor__max_depth=4,
+     ExtraTreesRegressor__max_features=auto,
+     ExtraTreesRegressor__min_density=None,
+     ExtraTreesRegressor__min_samples_leaf=1,
+     ExtraTreesRegressor__min_samples_split=2,
+     ExtraTreesRegressor__n_estimators=200, ExtraTreesRegressor__n_jobs=1,
+     ExtraTreesRegressor__oob_score=False,
+     ExtraTreesRegressor__random_state=42, ExtraTreesRegressor__verbose=0,
+     RandomForestRegressor=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     RandomForestRegressor__bootstrap=True,
+     RandomForestRegressor__compute_importances=None,
+     RandomForestRegressor__criterion=mse,
+     RandomForestRegressor__max_depth=4,
+     RandomForestRegressor__max_features=auto,
+     RandomForestRegressor__min_density=None,
+     RandomForestRegressor__min_samples_leaf=1,
+     RandomForestRegressor__min_samples_split=2,
+     RandomForestRegressor__n_estimators=200,
+     RandomForestRegressor__n_jobs=1,
+     RandomForestRegressor__oob_score=False,
+     RandomForestRegressor__random_state=42,
+     RandomForestRegressor__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.446587 | RMSE: 0.668272 | RMSLE: 0.561084 
+(fold 2 of 5) MSE : 0.449163 | RMSE: 0.670197 | RMSLE: 0.561674 
+(fold 3 of 5) MSE : 0.450006 | RMSE: 0.670825 | RMSLE: 0.561395 
+(fold 4 of 5) MSE : 0.446389 | RMSE: 0.668124 | RMSLE: 0.561438 
+(fold 5 of 5) MSE : 0.446620 | RMSE: 0.668297 | RMSLE: 0.559972 
+>>> Mean MSE: 0.447753 | Mean RMSE: 0.669143 | Mean RMSLE: 0.561112 <<<
+______________________________________________________________
+RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using RandomForestRegressor model -------------------- 
+(fold 1 of 5) MSE : 0.446895 | RMSE: 0.668502 | RMSLE: 0.561111 
+(fold 2 of 5) MSE : 0.449373 | RMSE: 0.670353 | RMSLE: 0.561683 
+(fold 3 of 5) MSE : 0.450206 | RMSE: 0.670974 | RMSLE: 0.561425 
+(fold 4 of 5) MSE : 0.446744 | RMSE: 0.668389 | RMSLE: 0.561457 
+(fold 5 of 5) MSE : 0.446750 | RMSE: 0.668394 | RMSLE: 0.559975 
+>>> Mean MSE: 0.447994 | Mean RMSE: 0.669322 | Mean RMSLE: 0.561130 <<<
+______________________________________________________________
+[  3.86135498e-02   4.37331385e-05   8.76430823e-08   5.47549452e-08
+   1.20326707e-07   9.61341833e-01   6.11466729e-07   1.00256505e-08]
+ExtraTreesRegressor(bootstrap=False, compute_importances=None, criterion=mse,
+          max_depth=4, max_features=auto, min_density=None,
+          min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+          n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using ExtraTreesRegressor model -------------------- 
+(fold 1 of 5) MSE : 0.472308 | RMSE: 0.687247 | RMSLE: 0.603726 
+(fold 2 of 5) MSE : 0.480223 | RMSE: 0.692981 | RMSLE: 0.608295 
+(fold 3 of 5) MSE : 0.479006 | RMSE: 0.692103 | RMSLE: 0.607065 
+(fold 4 of 5) MSE : 0.472387 | RMSE: 0.687304 | RMSLE: 0.604647 
+(fold 5 of 5) MSE : 0.473925 | RMSE: 0.688422 | RMSLE: 0.604420 
+>>> Mean MSE: 0.475570 | Mean RMSE: 0.689611 | Mean RMSLE: 0.605630 <<<
+______________________________________________________________
+[  4.33866688e-01   1.54029432e-05   8.92759544e-05   1.58131789e-06
+   6.34827065e-08   5.53442656e-01   5.94501251e-03   6.63931912e-03]
+GradientBoostingRegressor(alpha=0.25, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model -------------------- 
+(fold 1 of 5) MSE : 0.436660 | RMSE: 0.660803 | RMSLE: 0.552919 
+(fold 2 of 5) MSE : 0.439038 | RMSE: 0.662600 | RMSLE: 0.552494 
+(fold 3 of 5) MSE : 0.439685 | RMSE: 0.663087 | RMSLE: 0.552641 
+(fold 4 of 5) MSE : 0.437701 | RMSE: 0.661590 | RMSLE: 0.553456 
+(fold 5 of 5) MSE : 0.436917 | RMSE: 0.660997 | RMSLE: 0.551188 
+>>> Mean MSE: 0.438000 | Mean RMSE: 0.661815 | Mean RMSLE: 0.552540 <<<
+______________________________________________________________
+[ 0.16639669  0.000464    0.15563899  0.08475163  0.01760914  0.34618734
+  0.14616914  0.08278308]
+
+===================================================================================================
+
+ppradhan@machine:~/Documents/GA/final project/code$ python models.py 
+Pipeline(GradientBoostingRegressor=GradientBoostingRegressor(alpha=0.25, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=100, random_state=42,
+             subsample=1.0, verbose=0),
+     GradientBoostingRegressor__alpha=0.25,
+     GradientBoostingRegressor__init=None,
+     GradientBoostingRegressor__learning_rate=0.1,
+     GradientBoostingRegressor__loss=ls,
+     GradientBoostingRegressor__max_depth=3,
+     GradientBoostingRegressor__max_features=None,
+     GradientBoostingRegressor__min_samples_leaf=1,
+     GradientBoostingRegressor__min_samples_split=2,
+     GradientBoostingRegressor__n_estimators=100,
+     GradientBoostingRegressor__random_state=42,
+     GradientBoostingRegressor__subsample=1.0,
+     GradientBoostingRegressor__verbose=0,
+     RandomForestRegressor=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=4, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     RandomForestRegressor__bootstrap=True,
+     RandomForestRegressor__compute_importances=None,
+     RandomForestRegressor__criterion=mse,
+     RandomForestRegressor__max_depth=4,
+     RandomForestRegressor__max_features=auto,
+     RandomForestRegressor__min_density=None,
+     RandomForestRegressor__min_samples_leaf=1,
+     RandomForestRegressor__min_samples_split=2,
+     RandomForestRegressor__n_estimators=200,
+     RandomForestRegressor__n_jobs=1,
+     RandomForestRegressor__oob_score=False,
+     RandomForestRegressor__random_state=42,
+     RandomForestRegressor__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.449262 | RMSE: 0.670270 | RMSLE: 0.569907 
+(fold 2 of 5) MSE : 0.452054 | RMSE: 0.672349 | RMSLE: 0.570487 
+(fold 3 of 5) MSE : 0.453863 | RMSE: 0.673694 | RMSLE: 0.570948 
+(fold 4 of 5) MSE : 0.448513 | RMSE: 0.669711 | RMSLE: 0.569692 
+(fold 5 of 5) MSE : 0.448695 | RMSE: 0.669847 | RMSLE: 0.568156 
+>>> Mean MSE: 0.450477 | Mean RMSE: 0.671174 | Mean RMSLE: 0.569838 <<<
+______________________________________________________________
+
+============================================================================================================
+ppradhan@machine:~/Documents/GA/final project/code$ python models.py 
+Pipeline(RandomForestRegressor=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=5, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     RandomForestRegressor__bootstrap=True,
+     RandomForestRegressor__compute_importances=None,
+     RandomForestRegressor__criterion=mse,
+     RandomForestRegressor__max_depth=5,
+     RandomForestRegressor__max_features=auto,
+     RandomForestRegressor__min_density=None,
+     RandomForestRegressor__min_samples_leaf=1,
+     RandomForestRegressor__min_samples_split=2,
+     RandomForestRegressor__n_estimators=200,
+     RandomForestRegressor__n_jobs=1,
+     RandomForestRegressor__oob_score=False,
+     RandomForestRegressor__random_state=42,
+     RandomForestRegressor__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 0.443264 | RMSE: 0.665781 | RMSLE: 0.557208 
+(fold 2 of 5) MSE : 0.445196 | RMSE: 0.667230 | RMSLE: 0.557491 
+(fold 3 of 5) MSE : 0.445920 | RMSE: 0.667773 | RMSLE: 0.557488 
+(fold 4 of 5) MSE : 0.442819 | RMSE: 0.665447 | RMSLE: 0.557705 
+(fold 5 of 5) MSE : 0.442970 | RMSE: 0.665560 | RMSLE: 0.555933 
+>>> Mean MSE: 0.444034 | Mean RMSE: 0.666358 | Mean RMSLE: 0.557165 <<<
+______________________________________________________________
+
+/Documents/GA/final project/code$ python models.py 
+1000 229907
+1000 46738
+0.0
+Pipeline(RandomForestRegressor=RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=5, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=200,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0),
+     RandomForestRegressor__bootstrap=True,
+     RandomForestRegressor__compute_importances=None,
+     RandomForestRegressor__criterion=mse,
+     RandomForestRegressor__max_depth=5,
+     RandomForestRegressor__max_features=auto,
+     RandomForestRegressor__min_density=None,
+     RandomForestRegressor__min_samples_leaf=1,
+     RandomForestRegressor__min_samples_split=2,
+     RandomForestRegressor__n_estimators=200,
+     RandomForestRegressor__n_jobs=1,
+     RandomForestRegressor__oob_score=False,
+     RandomForestRegressor__random_state=42,
+     RandomForestRegressor__verbose=0)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 1.086027 | RMSE: 1.042126 | RMSLE: 0.605287 
+(fold 2 of 5) MSE : 0.957355 | RMSE: 0.978445 | RMSLE: 0.578855 
+(fold 3 of 5) MSE : 1.060725 | RMSE: 1.029915 | RMSLE: 0.614820 
+(fold 4 of 5) MSE : 1.163055 | RMSE: 1.078450 | RMSLE: 0.631315 
+(fold 5 of 5) MSE : 1.008363 | RMSE: 1.004173 | RMSLE: 0.618450 
+>>> Mean MSE: 1.055105 | Mean RMSE: 1.026622 | Mean RMSLE: 0.609745 <<<
+_____________________________________________________________
+------- start time - (Sat Nov 23 22:22:37 2013) -----
+1000 229907
+1000 46738
+0.0
+Pipeline(Ridge=Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001),
+     Ridge__alpha=0.25, Ridge__copy_X=True, Ridge__fit_intercept=True,
+     Ridge__max_iter=None, Ridge__normalize=False, Ridge__solver=auto,
+     Ridge__tol=0.001)
+ ------------------ Cross Validation using Pipeline model -------------------- 
+(fold 1 of 5) MSE : 1.081796 | RMSE: 1.040094 | RMSLE: 0.595286 
+(fold 2 of 5) MSE : 0.965665 | RMSE: 0.982682 | RMSLE: 0.559106 
+(fold 3 of 5) MSE : 1.076119 | RMSE: 1.037362 | RMSLE: 0.614746 
+(fold 4 of 5) MSE : 1.154748 | RMSE: 1.074592 | RMSLE: 0.609865 
+(fold 5 of 5) MSE : 0.979444 | RMSE: 0.989668 | RMSLE: 0.586876 
+>>> Mean MSE: 1.051554 | Mean RMSE: 1.024880 | Mean RMSLE: 0.593176 <<<
+______________________________________________________________
+------- finish time - (Sat Nov 23 22:23:43 2013) -----
+
+------- start time - (Tue Nov 26 21:23:16 2013) -----
+0
+216996 ---
+216996 ---
+[ 889.  724.    0.    0.    0.    0.    0.]
+5.0
+RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=5, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=500,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using RandomForestRegressor model -------------------- 
+(fold 1 of 5) MSE : 1.210218 | RMSE: 1.100099 | RMSLE: 0.606782 
+(fold 2 of 5) MSE : 1.214307 | RMSE: 1.101956 | RMSLE: 0.608692 
+ (fold 3 of 5) MSE : 1.209046 | RMSE: 1.099566 | RMSLE: 0.608045 
+(fold 4 of 5) MSE : 1.204960 | RMSE: 1.097707 | RMSLE: 0.606417 
+(fold 5 of 5) MSE : 1.211010 | RMSE: 1.100459 | RMSLE: 0.606376 
+>>> Mean MSE: 1.209908 | Mean RMSE: 1.099957 | Mean RMSLE: 0.607263 <<<
+______________________________________________________________
+[ 0.75433069  0.24566931  0.          0.          0.          0.          0.        ]
+22956
+22956
+[0.9137916043781904, 0.63931778457499078, 0.36479705452167727, 1.8089048622449977, 0.7299823569331676]
+------- finish time - (Tue Nov 26 22:15:15 2013) -----
+
+C:\data\Pradeep\Kaggle>\Anaconda\python models.py
+------- start time - (Wed Nov 27 15:30:56 2013) -----
+Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model --------------------
+(fold 1 of 5) MSE : 1.090870 | RMSE: 1.044447 | RMSLE: 0.565311
+(fold 2 of 5) MSE : 1.074060 | RMSE: 1.036369 | RMSLE: 0.559832
+(fold 3 of 5) MSE : 1.018205 | RMSE: 1.009061 | RMSLE: 0.544178
+(fold 4 of 5) MSE : 0.967945 | RMSE: 0.983842 | RMSLE: 0.522088
+(fold 5 of 5) MSE : 1.006537 | RMSE: 1.003263 | RMSLE: 0.523665
+>>> Mean MSE: 1.031523 | Mean RMSE: 1.015397 | Mean RMSLE: 0.543015 <<<
+______________________________________________________________
+====== predicting ......
+====== predicting done ......
+RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=5, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=500,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using RandomForestRegressor model --------------------
+(fold 1 of 5) MSE : 1.060187 | RMSE: 1.029654 | RMSLE: 0.537083
+(fold 2 of 5) MSE : 1.082835 | RMSE: 1.040593 | RMSLE: 0.536173
+(fold 3 of 5) MSE : 1.025815 | RMSE: 1.012825 | RMSLE: 0.521260
+(fold 4 of 5) MSE : 1.003781 | RMSE: 1.001889 | RMSLE: 0.508561
+(fold 5 of 5) MSE : 1.049864 | RMSE: 1.024628 | RMSLE: 0.515193
+>>> Mean MSE: 1.044496 | Mean RMSE: 1.021918 | Mean RMSLE: 0.523654 <<<
+______________________________________________________________
+Feature Importances ======= [0.064558456549922108, 0.028690776174790076, 0.0, 0.00073494588780380961, 0.00013454705778105536, 0.001144678156780622, 0.87894737679005219, 0.013670910633754385, 0.0018680385123600839, 0.010250270236755194]
+====== predicting ......
+====== predicting done ......
+GradientBoostingRegressor(alpha=0.25, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=200, random_state=42,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model --------------------
+(fold 1 of 5) MSE : 1.091877 | RMSE: 1.044929 | RMSLE: 0.542102
+(fold 2 of 5) MSE : 1.093628 | RMSE: 1.045767 | RMSLE: 0.544583
+(fold 3 of 5) MSE : 1.022680 | RMSE: 1.011276 | RMSLE: 0.512114
+(fold 4 of 5) MSE : 1.001237 | RMSE: 1.000618 | RMSLE: 0.511461
+(fold 5 of 5) MSE : 1.058138 | RMSE: 1.028658 | RMSLE: 0.516285
+>>> Mean MSE: 1.053512 | Mean RMSE: 1.026250 | Mean RMSLE: 0.525309 <<<
+______________________________________________________________
+Feature Importances ======= [0.20508339151814725, 0.20886792682316321, 0.0, 0.014562346358114001, 0.03338291617501541, 0.12446494399244847, 0.11665715676057571, 0.11735278440133244, 0.074300368048446599, 0.1053281659227569]
+====== predicting ......
+====== predicting done ......
+------- finish time - (Wed Nov 27 15:31:34 2013) -----
+
+Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, solver=auto, tol=0.001)
+ ------------------ Cross Validation using Ridge model --------------------
+(fold 1 of 5) MSE : 1.125277 | RMSE: 1.060791 | RMSLE: 0.557563
+(fold 2 of 5) MSE : 1.051657 | RMSE: 1.025503 | RMSLE: 0.566605
+(fold 3 of 5) MSE : 1.001438 | RMSE: 1.000719 | RMSLE: 0.506445
+(fold 4 of 5) MSE : 1.001594 | RMSE: 1.000797 | RMSLE: 0.526186
+(fold 5 of 5) MSE : 1.028208 | RMSE: 1.014006 | RMSLE: 0.593110
+>>> Mean MSE: 1.041635 | Mean RMSE: 1.020363 | Mean RMSLE: 0.549982 <<<
+______________________________________________________________
+====== predicting ......
+====== predicting done ......
+RandomForestRegressor(bootstrap=True, compute_importances=None, criterion=mse,
+           max_depth=5, max_features=auto, min_density=None,
+           min_samples_leaf=1, min_samples_split=2, n_estimators=500,
+           n_jobs=1, oob_score=False, random_state=42, verbose=0)
+ ------------------ Cross Validation using RandomForestRegressor model --------------------
+(fold 1 of 5) MSE : 1.148192 | RMSE: 1.071537 | RMSLE: 0.532587
+(fold 2 of 5) MSE : 1.100018 | RMSE: 1.048818 | RMSLE: 0.562067
+(fold 3 of 5) MSE : 1.034073 | RMSE: 1.016894 | RMSLE: 0.507702
+(fold 4 of 5) MSE : 0.994469 | RMSE: 0.997231 | RMSLE: 0.510485
+(fold 5 of 5) MSE : 1.027313 | RMSE: 1.013564 | RMSLE: 0.535779
+>>> Mean MSE: 1.060813 | Mean RMSE: 1.029609 | Mean RMSLE: 0.529724 <<<
+______________________________________________________________
+Feature Importances ======= [0.035993185279249974, 0.052363646443635566, 0.0, 0.0029227689118398706, 0.00068740205063892539, 0.0017371330663172712, 0.013501572983390133, 0.0019791352860943114, 0.87839447809591442, 0.012420677882919465]
+====== predicting ......
+====== predicting done ......
+GradientBoostingRegressor(alpha=0.25, init=None, learning_rate=0.1, loss=ls,
+             max_depth=3, max_features=None, min_samples_leaf=1,
+             min_samples_split=2, n_estimators=200, random_state=42,
+             subsample=1.0, verbose=0)
+ ------------------ Cross Validation using GradientBoostingRegressor model --------------------
+(fold 1 of 5) MSE : 1.119917 | RMSE: 1.058262 | RMSLE: 0.524895
+(fold 2 of 5) MSE : 1.129699 | RMSE: 1.062873 | RMSLE: 0.565539
+(fold 3 of 5) MSE : 1.052293 | RMSE: 1.025813 | RMSLE: 0.513993
+(fold 4 of 5) MSE : 1.018670 | RMSE: 1.009292 | RMSLE: 0.511886
+(fold 5 of 5) MSE : 1.068611 | RMSE: 1.033736 | RMSLE: 0.552001
+>>> Mean MSE: 1.077838 | Mean RMSE: 1.037995 | Mean RMSLE: 0.533663 <<<
+______________________________________________________________
+Feature Importances ======= [0.1469268639907664, 0.21622581701512725, 0.0, 0.073294175461810385, 0.051544577928628703, 0.070899326714747149, 0.12427182469540017, 0.096419489399181893, 0.11451683208461433, 0.10590109270972381]
+====== predicting ......
+====== predicting done ......
+------- finish time - (Thu Nov 28 18:00:49 2013) -----
