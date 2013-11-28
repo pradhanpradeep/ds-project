@@ -24,9 +24,9 @@ Here are the list of steps that would go in testing this code
       this bit requires few pickles to be downloaded from nltk data
       repository)
       
-      *** can ignore this step, I would make sure to copy these across
+      *** can ignore this step,if nltk data is not available, I would make sure to copy these across
 
-      the script produces the following output      
+      the script if executes successfully produces the following output      
       - data/review_test_sentiment_scores_PorterStemmer.csv
       - data/review_test_sentiment_scores_LancasterStemmeStemmer.csv
       - data/review_test_sentiment_scores_RegexpStemmer.csv
