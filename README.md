@@ -1,6 +1,6 @@
-ds-project
+=========
+== welcome to ds-project
 ==========
-`````````````````````````````````````````````````````````````````````````````
 Here are the list of steps that would go in testing this code
 
 1) download the data from Kaggle's website
@@ -24,7 +24,9 @@ Here are the list of steps that would go in testing this code
       this bit requires few pickles to be downloaded from nltk data
       repository)
       
-      produces the output      
+      *** can ignore this step, I would make sure to copy these across
+
+      the script produces the following output      
       - data/review_test_sentiment_scores_PorterStemmer.csv
       - data/review_test_sentiment_scores_LancasterStemmeStemmer.csv
       - data/review_test_sentiment_scores_RegexpStemmer.csv
@@ -32,7 +34,8 @@ Here are the list of steps that would go in testing this code
       - data/review_training_sentiment_scores_PorterStemmer.csv
       - data/review_training_sentiment_scores_LancasterStemmeStemmer.csv
       - data/review_training_sentiment_scores_RegexpStemmer.csv
-
+      
+      
 4) run this script with the default settings.
 
    all it takes few keyword arguments that can be
@@ -70,3 +73,5 @@ Here are the list of steps that would go in testing this code
     the essence of this config dict is it
     makes easy to add the required hyper
     paramerters as required.
+
+=============
