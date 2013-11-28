@@ -81,6 +81,23 @@ Here are the list of steps that would go in testing this code
     makes easy to add the required hyper
     paramerters as required.
 
+    The results on the terminal when the script finishes execution
+    should be something similar to 
+    ------- start time - (Wed Nov 27 15:31:34 2013) -----
+
+    Ridge(alpha=0.25, copy_X=True, fit_intercept=True, max_iter=None,
+    normalize=False, solver=auto, tol=0.001)
+    ------------------ Cross Validation using Ridge model --------------------
+    (fold 1 of 5) MSE : 1.125277 | RMSE: 1.060791 | RMSLE: 0.557563
+    (fold 2 of 5) MSE : 1.051657 | RMSE: 1.025503 | RMSLE: 0.566605
+    (fold 3 of 5) MSE : 1.001438 | RMSE: 1.000719 | RMSLE: 0.506445
+    (fold 4 of 5) MSE : 1.001594 | RMSE: 1.000797 | RMSLE: 0.526186
+    (fold 5 of 5) MSE : 1.028208 | RMSE: 1.014006 | RMSLE: 0.593110
+    >>> Mean MSE: 1.041635 | Mean RMSE: 1.020363 | Mean RMSLE: 0.549982 <<<
+    ------- finish time - (Thu Nov 28 18:00:49 2013) -----
+    ====== predicting ......
+    ====== predicting done ......
+
 5) rscript.r has few R snippets which I used to produce plots.
 
 6) presentation/business.html (business presentation)
