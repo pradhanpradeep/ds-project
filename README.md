@@ -82,4 +82,14 @@ Here are the list of steps that would go in testing this code
     makes easy to add the required hyper
     paramerters as required.
 
+5) rscript.r has few R snippets which I used to produce plots.
+
+6) presentation/business.html (business presentation)
+
+7) presentation/technical.html (technical presentation)
+
+8) docs/ has pdf versions.
+
+
+
 =============
