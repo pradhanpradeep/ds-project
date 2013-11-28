@@ -35,10 +35,9 @@ Here are the list of steps that would go in testing this code
       - data/review_training_sentiment_scores_RegexpStemmer.csv
       
       
-4) run main.py script with the default settings.
+4) we are now ready to go, just run main.py script with the default settings.
 
-   all it takes few keyword arguments that can be
-   tweaked while calling models.train() function.
+   all it takes few keyword arguments that need to be passed to models.train() function.
      
      -----------------------------------------------------
      regressors = ['Ridge', 'RandomForestRegressor', 'GradientBoostingRegressor'] #! see config.py 
@@ -66,20 +65,20 @@ Here are the list of steps that would go in testing this code
             . LancasterStemmer
             . RegexpStemmer
             . None
-                   
+                
+    - if standardized is set to True, the X and Y arrays are standardized 
+      by the sklearn.preprocessing scaling. somehow this wasn't much useful
+      in my case.
+      
     - if predict is set to True, the predictions on test set
        would be saved as csv in predictions directory
 
     - if plot is set to True, a graph is drawn with RMSLE
       values at the end of cross validation loop.
                       
-    the regressors used in this exercise
-    have been defined in the model_config
-    dictionary (models.py) with base
-    parameters.
-    the essence of this config dict is it
-    makes easy to add the required hyper
-    paramerters as required.
+    the regressors used in this exercise have been defined in the model_config
+    dictionary (models.py) with base parameters.the essence of this config dict is it
+    makes easy to tweak the hyper paramerters as required.
 
     The results on the terminal when the script finishes execution
     should be something similar to listing below:
@@ -108,6 +107,6 @@ Here are the list of steps that would go in testing this code
 
 9) png/ directory is for plot images
 
-
+10) results.log where i was dumping all my terminal outputs
 
 =============
