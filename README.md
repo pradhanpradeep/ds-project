@@ -1,5 +1,4 @@
-=========
-== welcome to ds-project
+welcome to ds-project
 ==========
 Here are the list of steps that would go in testing this code
 
@@ -88,7 +87,9 @@ Here are the list of steps that would go in testing this code
 
 7) presentation/technical.html (technical presentation)
 
-8) docs/ has pdf versions.
+8) docs/ directory has pdf versions
+
+9) png/ directory is for plot images
 
 
 
