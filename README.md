@@ -93,9 +93,10 @@ Here are the list of steps that would go in testing this code
     (fold 4 of 5) MSE : 1.001594 | RMSE: 1.000797 | RMSLE: 0.526186
     (fold 5 of 5) MSE : 1.028208 | RMSE: 1.014006 | RMSLE: 0.593110
     >>> Mean MSE: 1.041635 | Mean RMSE: 1.020363 | Mean RMSLE: 0.549982 <<<
-    ------- finish time - (Thu Nov 28 18:00:49 2013) -----
+    
     ====== predicting ......
     ====== predicting done ......
+    ------- finish time - (Thu Nov 28 18:00:49 2013) -----
 
 5) rscript.r has few R snippets which I used to produce plots.
 
