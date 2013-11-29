@@ -27,11 +27,11 @@ Here are the list of steps that would go in testing this code
 
       the script if executes successfully produces the following output      
       - data/review_test_sentiment_scores_PorterStemmer.csv
-      - data/review_test_sentiment_scores_LancasterStemmeStemmer.csv
+      - data/review_test_sentiment_scores_LancasterStemmer.csv
       - data/review_test_sentiment_scores_RegexpStemmer.csv
       
       - data/review_training_sentiment_scores_PorterStemmer.csv
-      - data/review_training_sentiment_scores_LancasterStemmeStemmer.csv
+      - data/review_training_sentiment_scores_LancasterStemmer.csv
       - data/review_training_sentiment_scores_RegexpStemmer.csv
       
       
